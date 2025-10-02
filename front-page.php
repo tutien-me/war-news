@@ -2,34 +2,34 @@
 /**
  * Front Page
  *
- * @package Viral News
+ * @package War News
  */
 get_header();
 
-$viral_news_enable_frontpage = get_theme_mod('viral_news_enable_frontpage', false);
+$war_news_enable_frontpage = get_theme_mod('war_news_enable_frontpage', false);
 
-if ($viral_news_enable_frontpage) {
+if ($war_news_enable_frontpage) {
     ?>
-    <div class="vn-container">
-        <div id="vn-top-section">
+    <div class="wn-container">
+        <div id="wn-top-section">
             <?php get_template_part('home-parts/top-section'); ?>
         </div>
 
-        <div id="vn-middle-section" class="vn-clearfix">
+        <div id="wn-middle-section" class="wn-clearfix">
             <div id="primary">
                 <?php get_template_part('home-parts/middle-left-section'); ?>
             </div>
 
             <div id="secondary" class="widget-area">
-                <?php dynamic_sidebar('viral-news-frontpage-sidebar') ?>
+                <?php dynamic_sidebar('war-news-frontpage-sidebar') ?>
             </div>
         </div>
 
-        <div id="vn-carousel-section">
+        <div id="wn-carousel-section">
             <?php get_template_part('home-parts/carousel-section'); ?>
         </div>
 
-        <div id="vn-bottom-section">
+        <div id="wn-bottom-section">
             <?php get_template_part('home-parts/bottom-section'); ?>
         </div>
     </div>

@@ -1,24 +1,24 @@
 <?php
 /**
- * @package Viral News
+ * @package War News
  */
 get_header();
 ?>
 
-<div class="vn-container">
+<div class="wn-container">
     <?php
     while (have_posts()) : the_post();
 
-        $viral_news_hide_title = get_post_meta($post->ID, 'viral_news_hide_title', true);
+        $war_news_hide_title = get_post_meta($post->ID, 'war_news_hide_title', true);
 
-        if (!$viral_news_hide_title) {
+        if (!$war_news_hide_title) {
             ?>
-            <header class="vn-main-header">
+            <header class="wn-main-header">
                 <?php the_title('<h1>', '</h1>'); ?>
             </header><!-- .entry-header -->
         <?php } ?>
 
-        <div class="vn-content-wrap vn-clearfix">
+        <div class="wn-content-wrap wn-clearfix">
             <div id="primary" class="content-area">
 
                 <?php get_template_part('template-parts/content', 'page'); ?>

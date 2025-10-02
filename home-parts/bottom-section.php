@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @package Viral News
+ * @package War News
  */
-$viral_news_frontpage_bottom_blocks = get_theme_mod('viral_news_frontpage_bottom_blocks', json_encode(array(
+$war_news_frontpage_bottom_blocks = get_theme_mod('war_news_frontpage_bottom_blocks', json_encode(array(
     array(
         'category1' => '-1',
         'category2' => '-1',
@@ -12,20 +12,20 @@ $viral_news_frontpage_bottom_blocks = get_theme_mod('viral_news_frontpage_bottom
         'enable' => 'on'
         ))));
 
-if ($viral_news_frontpage_bottom_blocks) {
-    $viral_news_frontpage_bottom_blocks = json_decode($viral_news_frontpage_bottom_blocks);
-    foreach ($viral_news_frontpage_bottom_blocks as $viral_news_frontpage_bottom_block) {
-        if ($viral_news_frontpage_bottom_block->enable == 'on') {
-            $viral_news_layout = $viral_news_frontpage_bottom_block->layout;
+if ($war_news_frontpage_bottom_blocks) {
+    $war_news_frontpage_bottom_blocks = json_decode($war_news_frontpage_bottom_blocks);
+    foreach ($war_news_frontpage_bottom_blocks as $war_news_frontpage_bottom_block) {
+        if ($war_news_frontpage_bottom_block->enable == 'on') {
+            $war_news_layout = $war_news_frontpage_bottom_block->layout;
 
             $args = array(
-                'cat1' => $viral_news_frontpage_bottom_block->category1,
-                'cat2' => $viral_news_frontpage_bottom_block->category2,
-                'cat3' => $viral_news_frontpage_bottom_block->category3,
-                'layout' => $viral_news_layout,
+                'cat1' => $war_news_frontpage_bottom_block->category1,
+                'cat2' => $war_news_frontpage_bottom_block->category2,
+                'cat3' => $war_news_frontpage_bottom_block->category3,
+                'layout' => $war_news_layout,
             );
 
-            do_action('viral_news_bottom_section', $args);
+            do_action('war_news_bottom_section', $args);
         }
     }
 }

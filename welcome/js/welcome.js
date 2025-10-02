@@ -1,5 +1,5 @@
 jQuery(function ($) {
-    $(document).on('click', '.viral-news-install-plugin', function () {
+    $(document).on('click', '.war-news-install-plugin', function () {
         event.preventDefault();
         var $button = $(this);
 
@@ -12,41 +12,41 @@ jQuery(function ($) {
         });
     });
 
-    $(document).on('click', '.viral-news-activate-plugin', function () {
+    $(document).on('click', '.war-news-activate-plugin', function () {
         event.preventDefault();
         var $button = $(this);
         $button.addClass('updating-message').html(importer_params.activating_text);
 
-        viral_news_activate_plugin($button);
+        war_news_activate_plugin($button);
 
     });
 
     $(document).on('wp-plugin-installing', function (event, args) {
         event.preventDefault();
 
-        $('.viral-news-install-plugin').addClass('updating-message').html(importer_params.installing_text);
+        $('.war-news-install-plugin').addClass('updating-message').html(importer_params.installing_text);
 
     });
 
     $(document).on('wp-plugin-install-success', function (event, response) {
 
         event.preventDefault();
-        var $button = $('.viral-news-install-plugin');
+        var $button = $('.war-news-install-plugin');
 
         $button.html(importer_params.activating_text);
 
         setTimeout(function () {
-            viral_news_activate_plugin($button);
+            war_news_activate_plugin($button);
         }, 1000);
 
     });
 
-    function viral_news_activate_plugin($button) {
+    function war_news_activate_plugin($button) {
         $.ajax({
             url: ajaxurl,
             type: 'POST',
             data: {
-                action: 'viral_news_activate_plugin',
+                action: 'war_news_activate_plugin',
                 slug: $button.data('slug'),
                 file: $button.data('filename')
             },

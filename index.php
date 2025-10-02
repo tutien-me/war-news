@@ -1,19 +1,19 @@
 <?php
 /**
  * The main template file.
- * @package Viral News
+ * @package War News
  */
 get_header();
 ?>
 
-<div class="vn-container vn-clearfix">
+<div class="wn-container wn-clearfix">
 
     <div id="primary" class="content-area">
 
         <?php if (have_posts()) : ?>
 
             <?php if (is_home() && !is_front_page()) : ?>
-                <header class="vn-main-header">
+                <header class="wn-main-header">
                     <h1><?php single_post_title(); ?></h1>
                 </header>
             <?php endif; ?>

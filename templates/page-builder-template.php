@@ -2,13 +2,13 @@
 /**
  * Template Name: Blank Template(For Page Builders)
  *
- * @package Viral News
+ * @package War News
  */
 get_header();
 ?>
 
-<div class="vn-container">
-    <div class="vn-content-wrap">
+<div class="wn-container">
+    <div class="wn-content-wrap">
 
         <?php while (have_posts()) : the_post(); ?>
 

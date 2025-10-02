@@ -1,15 +1,15 @@
 <?php
 /**
- * @package Viral News
+ * @package War News
  */
 get_header();
 ?>
 
-<div class="vn-container vn-clearfix">
+<div class="wn-container wn-clearfix">
 
     <div id="primary" class="content-area">
-        <header class="vn-main-header">
-            <h1><?php printf(esc_html__('Search Results for: %s', 'viral-news'), '<span>' . get_search_query() . '</span>'); ?></h1>
+        <header class="wn-main-header">
+            <h1><?php printf(esc_html__('Search Results for: %s', 'war-news'), '<span>' . get_search_query() . '</span>'); ?></h1>
         </header><!-- .entry-header -->
 
         <?php if (have_posts()) : ?>

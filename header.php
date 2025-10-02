@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Viral News
+ * @package War News
  */
 ?>
 <!DOCTYPE html>
@@ -15,67 +15,67 @@
 
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
-        <div id="vn-page">
-            <a class="skip-link screen-reader-text" href="#vn-content"><?php esc_html_e('Skip to content', 'viral-news'); ?></a>
+        <div id="wn-page">
+            <a class="skip-link screen-reader-text" href="#wn-content"><?php esc_html_e('Skip to content', 'war-news'); ?></a>
             <?php
-            $viral_news_top_header_display = get_theme_mod('viral_news_top_header_display', 'yes');
-            $viral_news_top_header_style = get_theme_mod('viral_news_top_header_style', 'light');
-            $viral_news_nav_style = get_theme_mod('viral_news_nav_style', 'light');
-            $viral_news_main_header_text_color = get_theme_mod('viral_news_main_header_text_color', 'black');
+            $war_news_top_header_display = get_theme_mod('war_news_top_header_display', 'yes');
+            $war_news_top_header_style = get_theme_mod('war_news_top_header_style', 'light');
+            $war_news_nav_style = get_theme_mod('war_news_nav_style', 'light');
+            $war_news_main_header_text_color = get_theme_mod('war_news_main_header_text_color', 'black');
             ?>
-            <header id="vn-masthead" class="vn-site-header">
-                <?php if ($viral_news_top_header_display == 'yes') { ?>
-                    <div class="vn-top-header vn-<?php echo esc_attr($viral_news_top_header_style) ?>">
-                        <div class="vn-container">
-                            <div class="vn-top-left-header">
+            <header id="wn-masthead" class="wn-site-header">
+                <?php if ($war_news_top_header_display == 'yes') { ?>
+                    <div class="wn-top-header wn-<?php echo esc_attr($war_news_top_header_style) ?>">
+                        <div class="wn-container">
+                            <div class="wn-top-left-header">
                                 <?php
                                 /*
                                  * Left Header Hook
-                                 * @hooked - viral_news_show_date - 10
-                                 * @hooked - viral_news_header_text - 10
+                                 * @hooked - war_news_show_date - 10
+                                 * @hooked - war_news_header_text - 10
                                  */
-                                do_action('viral_news_left_header_content')
+                                do_action('war_news_left_header_content')
                                 ?>
                             </div>
 
-                            <div class="vn-top-right-header">
+                            <div class="wn-top-right-header">
                                 <?php
                                 /*
                                  * Right Header Hook
-                                 * @hooked - viral_news_top_menu - 10
+                                 * @hooked - war_news_top_menu - 10
                                  */
-                                do_action('viral_news_right_header_content')
+                                do_action('war_news_right_header_content')
                                 ?>
                             </div>
                         </div>
                     </div>
                 <?php } ?>
 
-                <div class="vn-header vn-<?php echo esc_attr($viral_news_main_header_text_color) ?>">
-                    <div class="vn-container">
+                <div class="wn-header wn-<?php echo esc_attr($war_news_main_header_text_color) ?>">
+                    <div class="wn-container">
                         <?php
                         /*
                          * Right Header Hook
-                         * @hooked - viral_news_left_header - 10
-                         * @hooked - viral_news_middle_header - 20
-                         * @hooked - viral_news_right_header - 30
+                         * @hooked - war_news_left_header - 10
+                         * @hooked - war_news_middle_header - 20
+                         * @hooked - war_news_right_header - 30
                          */
-                        do_action('viral_news_main_header_content')
+                        do_action('war_news_main_header_content')
                         ?>
                     </div>
                 </div>
 
-                <?php if(viral_news_is_amp()){ ?>
+                <?php if(war_news_is_amp()){ ?>
                     <div id="main-navigation-wrap" class="primary-navigation-wrap">
-                        <button class="primary-search-toggle" <?php echo viral_news_amp_search_toggle(); ?>>
+                        <button class="primary-search-toggle" <?php echo war_news_amp_search_toggle(); ?>>
                             <span class="mdi mdi-magnify search-icon"></span>
                         </button>
-                        <button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false" <?php viral_news_amp_menu_toggle(); ?>>
+                        <button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false" <?php war_news_amp_menu_toggle(); ?>>
                             <span class="mdi mdi-menu menu-icon"></span>
                         </button>
 
                         <div class="primary-navigation">
-                            <nav id="site-navigation" class="main-navigation" role="navigation" <?php viral_news_amp_menu_is_toggled(); ?>>
+                            <nav id="site-navigation" class="main-navigation" role="navigation" <?php war_news_amp_menu_is_toggled(); ?>>
                                 <?php
                                 wp_nav_menu(
                                         array(
@@ -89,17 +89,17 @@
                         </div>
                     </div>
                 <?php } else { ?>
-                    <nav class="vn-main-navigation vn-<?php echo esc_attr($viral_news_nav_style) ?>">
-                        <div class="vn-container">
-                            <div class="vn-header-search"><a href="#"><i class="mdi mdi-magnify"></i></a></div>
+                    <nav class="wn-main-navigation wn-<?php echo esc_attr($war_news_nav_style) ?>">
+                        <div class="wn-container">
+                            <div class="wn-header-search"><a href="#"><i class="mdi mdi-magnify"></i></a></div>
                             
-                            <a href="#" class="vn-toggle-menu"><span></span></a>
+                            <a href="#" class="wn-toggle-menu"><span></span></a>
                             <?php
                             wp_nav_menu(
                                     array(
                                         'theme_location' => 'viral-news-primary-menu',
-                                        'container_class' => 'vn-menu vn-clearfix',
-                                        'menu_class' => 'vn-clearfix',
+                                        'container_class' => 'wn-menu wn-clearfix',
+                                        'menu_class' => 'wn-clearfix',
                                         'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                                     )
                             );
@@ -109,4 +109,4 @@
                 <?php } ?>
             </header>
 
-            <div id="vn-content" class="vn-site-content">
+            <div id="wn-content" class="wn-site-content">

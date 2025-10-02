@@ -2,7 +2,7 @@
     width: 98%;
 }
 
-.viral-news-accordion-section-title{
+.war-news-accordion-section-title{
     color: #555;
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
@@ -23,11 +23,11 @@
     clear: both;
 }
 
-.viral-news-info{
+.war-news-info{
     margin-top: 10px;
 }
 
-.viral-news-info a{
+.war-news-info a{
     background: #0073aa;
     padding: 5px 10px;
     color: #FFF;
@@ -40,26 +40,26 @@
     text-decoration: none;
 }
 
-.viral-news-info a:hover{
+.war-news-info a:hover{
     background: #000;
 }
 
-.viral-news-repeater-field-control{
+.war-news-repeater-field-control{
     background: #FFF;
     margin-bottom: 12px;
     display: block;
 }
 
-.viral-news-repeater-footer{
+.war-news-repeater-footer{
     margin-top: 15px;
     text-align: right;
 }
 
-.viral-news-repeater-field-control:first-child .viral-news-repeater-footer{
+.war-news-repeater-field-control:first-child .war-news-repeater-footer{
     display: none;
 }
 
-.viral-news-repeater-field-title{
+.war-news-repeater-field-title{
     padding: 13px 15px;
     line-height: 1;
     overflow: hidden;
@@ -73,7 +73,7 @@
     border-bottom: 0;
 }
 
-.viral-news-repeater-field-title:after {
+.war-news-repeater-field-title:after {
     content: "\f142";
     font: 400 20px/1 dashicons;
     position: absolute;
@@ -87,11 +87,11 @@
     cursor: pointer;
 }
 
-.viral-news-repeater-field-control.expanded .viral-news-repeater-field-title:after{
+.war-news-repeater-field-control.expanded .war-news-repeater-field-title:after{
     content: "\f140";
 }
 
-.viral-news-repeater-fields{
+.war-news-repeater-fields{
     padding: 0 10px 10px;
     border-top: none;
     line-height: 16px;
@@ -100,19 +100,19 @@
     display: none;
 }
 
-.viral-news-repeater-fields .customize-control-title{
+.war-news-repeater-fields .customize-control-title{
     margin-top: 10px;
 }
 
-.viral-news-repeater-field-control.expanded .viral-news-repeater-fields{
+.war-news-repeater-field-control.expanded .war-news-repeater-fields{
     display: block;
 }
 
-.viral-news-add-control-field {
+.war-news-add-control-field {
     float: right;
 }
 
-.viral-news-add-control-field:before {
+.war-news-add-control-field:before {
     content: "\f132";
     display: inline-block;
     position: relative;
@@ -123,37 +123,37 @@
 }
 
 
-.viral-news-fields textarea{
+.war-news-fields textarea{
     width: 100%;
     min-height: 100px;
 }
 
-.viral-news-fields select{
+.war-news-fields select{
     width: 100%;
     min-width: none;
 }
 
-.viral-news-type-checkbox{
+.war-news-type-checkbox{
     margin-top: 10px;
 }
 
-.viral-news-type-checkbox label{
+.war-news-type-checkbox label{
     line-height: 20px;
     display: block;
     margin-left: 24px;
     padding-top: 6px;
 }
 
-.viral-news-type-checkbox input[type=checkbox]{
+.war-news-type-checkbox input[type=checkbox]{
     margin-right: 8px;
     margin-left: -24px;
 }
 
-.viral-news-type-selector .selector-labels{
+.war-news-type-selector .selector-labels{
     margin: 0 -5px;
 }
 
-.viral-news-type-selector .selector-labels label{
+.war-news-type-selector .selector-labels label{
     display: inline-block;
     padding: 10px 5px 0;
     position: relative;
@@ -163,11 +163,11 @@
     -webkit-box-sizing: border-box;
 }
 
-.viral-news-type-selector .selector-labels label img{
+.war-news-type-selector .selector-labels label img{
     vertical-align: middle;
 }
 
-.viral-news-type-selector .selector-labels label.selector-selected:after{
+.war-news-type-selector .selector-labels label.selector-selected:after{
     content: "";
     height: 35px;
     width: 35px;
@@ -177,7 +177,7 @@
     background: url(images/selected.png) no-repeat right top;
 }
 
-.viral-news-type-radio .radio-labels label{
+.war-news-type-radio .radio-labels label{
     display: block;
     padding: 5px 0;
 }
@@ -271,7 +271,7 @@
     background: url(../../images/admin/pt-item-tick-selector.png) no-repeat
 }
 
-.viral-news-range-slider .range-input{
+.war-news-range-slider .range-input{
     height: 12px;
     position: relative;
     background: #EEE;
@@ -279,7 +279,7 @@
     margin: 0 4px 18px;
 }
 
-.viral-news-range-slider .range-input-selector{
+.war-news-range-slider .range-input-selector{
     width: 80px !important;
     margin-right: 10px !important;
     border-radius: 12px;
@@ -287,21 +287,21 @@
     height: 32px;
 }
 
-.viral-news-range-slider .ui-slider .ui-slider-range {
+.war-news-range-slider .ui-slider .ui-slider-range {
     position: absolute;
     z-index: 1;
     display: block;
     background: #0073aa;
 }
 
-.viral-news-range-slider .ui-slider-horizontal .ui-slider-range {
+.war-news-range-slider .ui-slider-horizontal .ui-slider-range {
     top: 0;
     height: 100%;
     left: 0;
     border-radius: 4px;
 }
 
-.viral-news-range-slider .ui-slider .ui-slider-handle {
+.war-news-range-slider .ui-slider .ui-slider-handle {
     position: absolute;
     z-index: 2;
     width: 18px;
@@ -320,11 +320,11 @@
     -webkit-box-sizing: border-box;
 }
 
-.viral-news-type-icon{
+.war-news-type-icon{
     overflow: hidden;
 }
 
-.viral-news-selected-icon{
+.war-news-selected-icon{
     background: #F6F6F6;
     height: 45px;
     line-height: 45px;
@@ -336,7 +336,7 @@
     font-size: 28px;
 }
 
-.viral-news-selected-icon span{
+.war-news-selected-icon span{
     position: absolute;
     background: #F6F6F6;
     right: -45px;
@@ -347,7 +347,7 @@
     font-size: 20px;
 }
 
-.viral-news-icon-list{
+.war-news-icon-list{
     height: 215px;
     overflow-y: scroll;
     font-size: 18px;
@@ -362,7 +362,7 @@
     -webkit-box-sizing: border-box;
 }
 
-.viral-news-icon-list li{
+.war-news-icon-list li{
     float: left;
     margin: 4% 3% 0;
     height: 40px;
@@ -372,13 +372,13 @@
     border: 1px solid #EEE;
 }
 
-.viral-news-icon-list li:hover{
+.war-news-icon-list li:hover{
     background: #333;
     border: 1px solid #333;
     color: #FFF;
 }
 
-.viral-news-icon-list li.icon-active{
+.war-news-icon-list li.icon-active{
     background: #0073aa;
     border: 1px solid #0073aa;
     color: #FFF;
@@ -458,7 +458,7 @@
     display: none;
 }
 
-.viral-news-checkbox-toggle{
+.war-news-checkbox-toggle{
     background: #e2e2e2;
     padding: 12px;
     border: 1px solid #DDD;
@@ -476,19 +476,19 @@
     content: "\f319";
 }
 
-#accordion-section-viral_news_typography_section .accordion-section-title:before{
+#accordion-section-war_news_typography_section .accordion-section-title:before{
     content: "\f464";
 }
 
-#accordion-panel-viral_news_general_settings_panel .accordion-section-title:before{
+#accordion-panel-war_news_general_settings_panel .accordion-section-title:before{
     content: "\f111";
 }
 
-#accordion-panel-viral_news_header_setting_panel .accordion-section-title:before{
+#accordion-panel-war_news_header_setting_panel .accordion-section-title:before{
     content: "\f212";
 }
 
-#accordion-panel-viral_news_front_page_panel .accordion-section-title:before{
+#accordion-panel-war_news_front_page_panel .accordion-section-title:before{
     content: "\f102";
 }
 
@@ -504,23 +504,23 @@
     content: "\f499";
 }
 
-#accordion-section-viral-news-doc-section .accordion-section-title:before{
+#accordion-section-war-news-doc-section .accordion-section-title:before{
     content: "\f105";
 }
 
-#accordion-section-viral-news-demo-import-section .accordion-section-title:before{
+#accordion-section-war-news-demo-import-section .accordion-section-title:before{
     content: "\f316";
 }
 
-#accordion-section-viral-news-pro-section .accordion-section-title:before{
+#accordion-section-war-news-pro-section .accordion-section-title:before{
     display: none;
 }
 
-#accordion-section-viral-news-pro-section{
+#accordion-section-war-news-pro-section{
     text-align: center;
 }
 
-#accordion-section-viral-news-pro-section .accordion-section-title .button {
+#accordion-section-war-news-pro-section .accordion-section-title .button {
     height: auto;
     line-height: 1.6;
     text-transform: uppercase;
@@ -535,57 +535,57 @@
     font-size: 15px;
 }
 
-#accordion-section-viral-news-doc-section .accordion-section-title .button,
-#accordion-section-viral-news-demo-import-section .accordion-section-title .button{
+#accordion-section-war-news-doc-section .accordion-section-title .button,
+#accordion-section-war-news-demo-import-section .accordion-section-title .button{
     float: right;
     margin-top: -2px;
 }
 
-.customize-control-viral-news-upgrade-text{
+.customize-control-war-news-upgrade-text{
     background: #FFFFFF;
     box-sizing: border-box;
     padding: 10px;
 }
 
-.customize-control-viral-news-upgrade-text label{
+.customize-control-war-news-upgrade-text label{
     padding: 0 0 0 26px;
     display: block;
 }
 
-.customize-control-viral-news-upgrade-text .dashicons{
+.customize-control-war-news-upgrade-text .dashicons{
     float: left;
     margin-left: -26px;
 }
 
-.customize-control-viral-news-upgrade-text ul{
+.customize-control-war-news-upgrade-text ul{
     margin: 8px 0 0 16px;
     font-style: italic;
 }
 
-.customize-control-viral-news-upgrade-text ul li{
+.customize-control-war-news-upgrade-text ul li{
     margin-bottom: 3px;
     padding-left: 8px;
     line-height: 1.3;
 }
 
-.customize-control-viral-news-upgrade-text ul li:before{
+.customize-control-war-news-upgrade-text ul li:before{
     content: '- ';
     margin-left: -8px;
 }
 
-.control-section-viral-news-upgrade-section{
+.control-section-war-news-upgrade-section{
     background: #FFF;
     padding: 20px;
     margin: 15px;
 }
 
-.control-section-viral-news-upgrade-section .button{
+.control-section-war-news-upgrade-section .button{
     display: block;
     text-align: center;
     margin-top: 10px;
 }
 
-.control-section-viral-news-upgrade-section label{
+.control-section-war-news-upgrade-section label{
     display: block;
     font-weight: bold;
     margin-bottom: 8px;

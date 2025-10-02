@@ -1,29 +1,29 @@
 <?php
 
 /**
- * @package Viral News
+ * @package War News
  */
-$viral_news_frontpage_middle_blocks = get_theme_mod('viral_news_frontpage_middle_blocks', json_encode(array(
+$war_news_frontpage_middle_blocks = get_theme_mod('war_news_frontpage_middle_blocks', json_encode(array(
     array(
-        'title' => esc_html__('Title', 'viral-news'),
+        'title' => esc_html__('Title', 'war-news'),
         'category' => '',
         'layout' => 'style1',
         'enable' => 'on'
         ))));
 
-if ($viral_news_frontpage_middle_blocks) {
-    $viral_news_frontpage_middle_blocks = json_decode($viral_news_frontpage_middle_blocks);
-    foreach ($viral_news_frontpage_middle_blocks as $viral_news_frontpage_middle_block) {
-        if ($viral_news_frontpage_middle_block->enable == 'on') {
-            $viral_news_layout = $viral_news_frontpage_middle_block->layout;
+if ($war_news_frontpage_middle_blocks) {
+    $war_news_frontpage_middle_blocks = json_decode($war_news_frontpage_middle_blocks);
+    foreach ($war_news_frontpage_middle_blocks as $war_news_frontpage_middle_block) {
+        if ($war_news_frontpage_middle_block->enable == 'on') {
+            $war_news_layout = $war_news_frontpage_middle_block->layout;
 
             $args = array(
-                'cat' => $viral_news_frontpage_middle_block->category,
-                'layout' => $viral_news_layout,
-                'title' => $viral_news_frontpage_middle_block->title
+                'cat' => $war_news_frontpage_middle_block->category,
+                'layout' => $war_news_layout,
+                'title' => $war_news_frontpage_middle_block->title
             );
 
-            do_action('viral_news_middle_section', $args);
+            do_action('war_news_middle_section', $args);
         }
     }
 }

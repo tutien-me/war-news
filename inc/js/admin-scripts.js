@@ -1,4 +1,4 @@
-function viral_news_upload_media_image(selector) {
+function war_news_upload_media_image(selector) {
 // ADD IMAGE LINK
     jQuery('body').on('click', selector, function (event) {
         event.preventDefault();
@@ -34,7 +34,7 @@ function viral_news_upload_media_image(selector) {
     });
 }
 
-function viral_news_delete_media_image(selector) {
+function war_news_delete_media_image(selector) {
     // DELETE IMAGE LINK
     jQuery('body').on('click', selector, function (event) {
 
@@ -54,6 +54,6 @@ function viral_news_delete_media_image(selector) {
 }
 
 jQuery(document).ready(function (jQuery) {
-    viral_news_upload_media_image('.viral-news-upload-button');
-    viral_news_delete_media_image('.viral-news-delete-button');
+    war_news_upload_media_image('.war-news-upload-button');
+    war_news_delete_media_image('.war-news-delete-button');
 });

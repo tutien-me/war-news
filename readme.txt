@@ -1,8 +1,8 @@
 === War News ===
-War News WordPress Theme, Copyright War News 2022
+War News WordPress Theme, Copyright Xúm 2022
 War News is distributed under the terms of the GNU GPL (http://www.gnu.org/licenses/gpl-2.0.html)
 
-Contributors: warnews
+Contributors: xum
 Tags: blog, entertainment, news, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
 Requires at least: 5.6

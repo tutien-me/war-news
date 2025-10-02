@@ -89,11 +89,11 @@ msgid "Skip to content"
 msgstr ""
 
 #: footer.php:37
-msgid "by War News"
+msgid "by Xúm"
 msgstr ""
 
 #: footer.php:37
-msgid "Download War News"
+msgid "Download Xúm"
 msgstr ""
 
 #: footer.php:37
@@ -1496,13 +1496,13 @@ msgid ""
 msgstr ""
 
 #. URI of the theme
-msgid "https://warnews.me/wordpress-theme/war-news/"
+msgid "https://xum.me/wordpress-theme/war-news/"
 msgstr ""
 
 #. Author of the theme
-msgid "War News"
+msgid "Xúm"
 msgstr ""
 
 #. Author URI of the theme
-msgid "https://warnews.me"
+msgid "https://xum.me"
 msgstr ""

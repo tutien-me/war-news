@@ -34,7 +34,7 @@
     <div class="wn-bottom-footer">
         <div class="wn-container">
             <div class="wn-site-info">
-                <?php printf('%4$s <span class="sep"> | </span><a title="%3$s" href="%1$s" target="_blank">War News</a> %2$s', 'https://warnews.me/', esc_html__('by War News', 'war-news'), esc_attr__('Download War News', 'war-news'), esc_html__('WordPress Theme', 'war-news')); ?>
+                <?php printf('%4$s <span class="sep"> | </span><a title="%3$s" href="%1$s" target="_blank">Xúm</a> %2$s', 'https://xum.me/', esc_html__('by Xúm', 'war-news'), esc_attr__('Download Xúm', 'war-news'), esc_html__('WordPress Theme', 'war-news')); ?>
             </div>
         </div>
     </div>

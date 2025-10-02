@@ -242,7 +242,7 @@ button,
 input,
 select,
 textarea {
-    color: #404040;
+    color: #2c2c2c;
     font-size: 14px;
     line-height: 1.8;
     font-family: 'Libre Baskerville', sans-serif
@@ -255,9 +255,11 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.3;
     font-family: 'Playfair Display', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h1{
@@ -305,7 +307,7 @@ blockquote,
 .wp-block-quote.is-large, 
 .wp-block-quote.is-style-large{
     margin: 0 0 25px;
-    border-left: 3px solid #EEE;
+    border-left: 3px solid #3d3d3d;
     padding-left: 30px;
 }
 
@@ -339,7 +341,7 @@ acronym {
 
 mark,
 ins {
-    background: #fff9c0;
+    background: #3a3a2e9c0;
     text-decoration: none;
 }
 
@@ -361,7 +363,7 @@ html {
 }
 
 body {
-    background: #fff; /* Fallback for when there is no custom background color defined. */
+    background: #3a3a2e; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -377,7 +379,7 @@ q {
 }
 
 hr {
-    background-color: #EEE;
+    background-color: #3d3d3d;
     border: 0;
     height: 1px;
     margin-top:25px;
@@ -431,19 +433,22 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    background: #0078af;
+    background: #4a5d23;
     color: #FFF;
     padding: 0 20px;
     border: 0;
     height: 40px;
     line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    background: #0E0E0E;
+    background: #2d3614;
 }
 
 button:focus,
@@ -472,14 +477,14 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-    border: 1px solid #EEE;
+    border: 1px solid #3d3d3d;
     width: 100%;
     padding: 3px 10px;
     height: 40px;
 }
 
 select {
-    border: 1px solid #EEE;
+    border: 1px solid #3d3d3d;
     padding: 3px;
     height: 40px;
 }
@@ -513,7 +518,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-    color: #0078af;
+    color: #4a5d23;
     text-decoration: none;
 }
 
@@ -669,7 +674,7 @@ a:active {
 .tagcloud a{
     display: inline-block;
     font-size: 15px !important;
-    border: 2px solid #EEE;
+    border: 2px solid #3d3d3d;
     padding: 6px 10px;
     line-height: 1;
     margin: 0 8px 8px 0;
@@ -784,7 +789,7 @@ a:active {
 .entry-post-info .entry-date{
     display: inline-block;
     padding: 10px 0;
-    background: #0078af;
+    background: #4a5d23;
     color: #FFF;
     width: 70px;
     margin-top: -30px;
@@ -877,7 +882,7 @@ a:active {
 }
 
 .entry-footer .wn-read-more{
-    background: #0078af;
+    background: #4a5d23;
     height: 40px;
     padding: 0 20px;
     color: #FFF;
@@ -956,7 +961,7 @@ a:active {
 }
 
 .widget-area a:hover{
-    color: #0078af;
+    color: #4a5d23;
 }
 
 .widget-area .widget{
@@ -1050,13 +1055,13 @@ a:active {
     top: 0;
     height: 20px;
     width: 20px;
-    background: #FFF;
+    background: #e8e4d8;
     border-radius: 50%;
     border: 5px solid #F0F0F0;
 }
 
 .wn-timeline .wn-post-item:hover:after{
-    background: #0078af;
+    background: #4a5d23;
 }
 
 .wn-timeline .posted-on{
@@ -1113,7 +1118,7 @@ h3#reply-title,
 h3.comments-title{
     font-size: 20px;
     text-transform: uppercase;
-    border-bottom: 3px solid #EEE;
+    border-bottom: 3px solid #3d3d3d;
     margin-bottom: 30px;
     font-weight: normal;
     line-height: 20px;
@@ -1152,7 +1157,7 @@ article.comment-body {
 }
 
 .comment-list a:hover{
-    color: #0078af;
+    color: #4a5d23;
 }
 
 .comment-list .comment-respond{
@@ -1186,7 +1191,7 @@ article.comment-body {
 } 
 
 .comment-list .comment-metadata {
-    border-top: 1px solid #EEE;
+    border-top: 1px solid #3d3d3d;
     padding-top: 10px;
     font-size: 13px;
 }
@@ -1205,7 +1210,7 @@ article.comment-body {
 
 .comment-navigation .nav-previous a,
 .comment-navigation .nav-next a{
-    background: #0078af;
+    background: #4a5d23;
     color: #FFF;
     display: inline-block;
     padding: 0 10px;
@@ -1221,7 +1226,7 @@ article.comment-body {
 .comment-navigation .nav-next a:after{
     content: "";
     position: absolute;
-    border-left: 11px solid #0078af;
+    border-left: 11px solid #4a5d23;
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
     top: 0;
@@ -1235,7 +1240,7 @@ article.comment-body {
 .comment-navigation .nav-previous a:after{
     content: "";
     position: absolute;
-    border-right: 11px solid #0078af;
+    border-right: 11px solid #4a5d23;
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
     top: 0;
@@ -1343,7 +1348,7 @@ object {
 .wn-boxed #wn-page{
     width: 1250px;
     margin: 0 auto;
-    background: #FFF;
+    background: #e8e4d8;
 }
 
 .wn-container{
@@ -1382,7 +1387,7 @@ object {
     color: #333;
     padding: 12px 0;
     font-size: 13px;
-    border-bottom: 1px solid #EEE;
+    border-bottom: 1px solid #3d3d3d;
 }
 
 .wn-top-header.wn-dark{
@@ -1532,8 +1537,8 @@ object {
 ## Menus
 --------------------------------------------------------------*/
 #wn-site-navigation{
-    border-top: 1px solid #EEE;
-    border-bottom: 1px solid #EEE;
+    border-top: 1px solid #3d3d3d;
+    border-bottom: 1px solid #3d3d3d;
     margin-bottom: 40px;
 }
 
@@ -1580,7 +1585,7 @@ object {
     position: absolute;
     left: 0;
     top: 100% ;
-    background: #FFF;
+    background: #e8e4d8;
     box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
     min-width: 240px;
     z-index: 99;
@@ -1642,12 +1647,12 @@ object {
 }
 
 .wn-main-navigation.wn-dark  .wn-menu > ul > li > a:after{
-    background: #FFF;
+    background: #e8e4d8;
 }
 
 #wn-site-navigation.wn-theme-color{
     border: none;
-    background: #0078af;
+    background: #4a5d23;
 }
 
 #wn-site-navigation.wn-theme-color .wn-menu > ul > li > a{
@@ -1655,7 +1660,7 @@ object {
 }
 
 .wn-main-navigation.wn-theme-color .wn-menu > ul > li > a:after{
-    background: #FFF;
+    background: #e8e4d8;
 }
 
 .site-main .comment-navigation,
@@ -1672,7 +1677,7 @@ object {
     width: 50%;
     text-align: right;
     padding: 20px;
-    border-right: 1px solid #EEE;
+    border-right: 1px solid #3d3d3d;
 }
 
 .comment-navigation .nav-next,
@@ -1685,8 +1690,8 @@ object {
 }
 
 .post-navigation{
-    border-top: 1px solid #EEE;
-    border-bottom: 1px solid #EEE;
+    border-top: 1px solid #3d3d3d;
+    border-bottom: 1px solid #3d3d3d;
     margin-bottom: 50px;
 }
 
@@ -1700,7 +1705,7 @@ object {
 }
 
 .post-navigation a:hover{
-    color: #0078af;
+    color: #4a5d23;
 }
 
 .post-navigation span{
@@ -1778,7 +1783,7 @@ object {
 }
 
 .wn-top-block .post-categories li a:hover{
-    background: #0078af;
+    background: #4a5d23;
 }
 
 .wn-post-item h3.wn-large-title{
@@ -2040,7 +2045,7 @@ object {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #0078af;
+    background: #4a5d23;
 }
 
 .wn-post-item{
@@ -2061,7 +2066,7 @@ object {
 }
 
 .wn-post-item h3 a:hover{
-    color: #0078af;
+    color: #4a5d23;
 }
 
 .wn-post-thumb{
@@ -2352,7 +2357,7 @@ object {
     width: 35px;
     line-height: 40px;
     text-align: center;
-    background: #0078af;
+    background: #4a5d23;
     font-size: 24px;
     color: #FFF;
     opacity: 0;
@@ -2421,7 +2426,7 @@ object {
 .wn-footer-block .widget-title{
     font-size: 22px;
     margin-bottom: 20px;
-    color: #EEE;
+    color: #3d3d3d;
 }
 
 .wn-footer-block ul{
@@ -2464,7 +2469,7 @@ object {
 }
 
 #wn-back-top{
-    background: #0078af;
+    background: #4a5d23;
     color: #FFF;
     height: 40px;
     width: 40px;
@@ -2614,7 +2619,7 @@ object {
 }
 
 .ht-search-container .search-form {
-    background: #FFF;
+    background: #e8e4d8;
     padding: 0 90px;
 }
 
@@ -2712,7 +2717,7 @@ object {
 
     .wn-main-navigation .wn-menu{
         display: none;
-        background: #FFF;
+        background: #e8e4d8;
         float: none;
         position: absolute;
         top: 100%;
@@ -2758,7 +2763,7 @@ object {
 
     .wn-theme-color.wn-main-navigation a.wn-toggle-menu span,
     .wn-dark.wn-main-navigation a.wn-toggle-menu span{
-        background: #FFF;
+        background: #e8e4d8;
         box-shadow: 0 10px 0px 0px #FFF, 0 -10px 0px 0px #FFF;
     }
 
@@ -3031,7 +3036,7 @@ object {
     .posts-navigation .nav-previous, 
     .post-navigation .nav-previous{
         border-right: 0;
-        border-bottom: 1px solid #EEE;
+        border-bottom: 1px solid #3d3d3d;
     }
 
     .ht-search-container .search-form{

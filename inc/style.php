@@ -4,8 +4,8 @@
  * @package War News
  */
 function war_news_dymanic_styles() {
-    $color = get_theme_mod('war_news_template_color', '#0078af');
-    $content_color = get_theme_mod('war_news_content_color', '#404040');
+    $color = get_theme_mod('war_news_template_color', '#4a5d23');
+    $content_color = get_theme_mod('war_news_content_color', '#2c2c2c');
     $header_typography = get_theme_mod('war_news_header_typography', 'Playfair Display');
     $body_typography = get_theme_mod('war_news_body_typography', 'Libre Baskerville');
     $header_image = get_theme_mod('war_news_header_image');

@@ -28,7 +28,7 @@
 }
 
 .war-news-info a{
-    background: #0073aa;
+    background: #4a5d23;
     padding: 5px 10px;
     color: #FFF;
     text-align: center;
@@ -237,7 +237,7 @@
 }
 
 .onoffswitch-active .onoffswitch-switch {
-    background: #0073aa;
+    background: #4a5d23;
     left: 0
 }
 
@@ -291,7 +291,7 @@
     position: absolute;
     z-index: 1;
     display: block;
-    background: #0073aa;
+    background: #4a5d23;
 }
 
 .war-news-range-slider .ui-slider-horizontal .ui-slider-range {
@@ -310,7 +310,7 @@
     -ms-touch-action: none;
     touch-action: none;
     background: #EEE;
-    border: 2px solid #0073aa;
+    border: 2px solid #4a5d23;
     border-radius: 50%;
     margin-top: -3px;
     margin-left: -9px;
@@ -379,8 +379,8 @@
 }
 
 .war-news-icon-list li.icon-active{
-    background: #0073aa;
-    border: 1px solid #0073aa;
+    background: #4a5d23;
+    border: 1px solid #4a5d23;
     color: #FFF;
 }
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Viral News
+ * @package War News
  */
 ?>
 

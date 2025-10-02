@@ -41,31 +41,31 @@
     float: left;
 }
 
-.viral-sidebar-layouts{
+.war-sidebar-layouts{
     margin-bottom: 15px;
 }
 
-.viral-sidebar-layouts label{
+.war-sidebar-layouts label{
     position: relative;
     display: inline-block;
     margin-right: 15px;
     margin-top: 15px;
 }
 
-.viral-sidebar-layouts label input{
+.war-sidebar-layouts label input{
     opacity: 0;
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.viral-sidebar-layouts label img{
+.war-sidebar-layouts label img{
     vertical-align: middle;
     border: 2px solid #eeeeee;
     width: 90px;
 }
 
-.viral-sidebar-layouts label input:checked + img{
+.war-sidebar-layouts label input:checked + img{
     border: 2px solid #007CBD;
 }
 

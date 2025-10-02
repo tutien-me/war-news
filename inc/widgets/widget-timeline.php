@@ -1,19 +1,19 @@
 <?php
 /**
- * @package Viral News
+ * @package War News
  */
-add_action('widgets_init', 'viral_news_register_timeline');
+add_action('widgets_init', 'war_news_register_timeline');
 
-function viral_news_register_timeline() {
-    register_widget('viral_news_timeline');
+function war_news_register_timeline() {
+    register_widget('war_news_timeline');
 }
 
-class viral_news_timeline extends WP_Widget {
+class war_news_timeline extends WP_Widget {
 
     public function __construct() {
         parent::__construct(
-                'viral_news_timeline', 'Viral News : TimeLine', array(
-            'description' => esc_html__('A widget to display posts in timeline', 'viral-news')
+                'war_news_timeline', 'War News : TimeLine', array(
+            'description' => esc_html__('A widget to display posts in timeline', 'war-news')
                 )
         );
     }
@@ -25,30 +25,30 @@ class viral_news_timeline extends WP_Widget {
     private function widget_fields() {
         $categories = get_categories();
         $cat = array();
-        $cat['-1'] = esc_html__('Latest Posts', 'viral-news');
+        $cat['-1'] = esc_html__('Latest Posts', 'war-news');
 
         foreach ($categories as $category) {
             $cat[$category->term_id] = $category->name;
         }
         $fields = array(
             'title' => array(
-                'viral_news_widgets_name' => 'title',
-                'viral_news_widgets_title' => esc_html__('Title', 'viral-news'),
-                'viral_news_widgets_field_type' => 'text',
-                'viral_news_widgets_default' => esc_html__('Title', 'viral-news')
+                'war_news_widgets_name' => 'title',
+                'war_news_widgets_title' => esc_html__('Title', 'war-news'),
+                'war_news_widgets_field_type' => 'text',
+                'war_news_widgets_default' => esc_html__('Title', 'war-news')
             ),
             'category' => array(
-                'viral_news_widgets_name' => 'category',
-                'viral_news_widgets_title' => esc_html__('Select Category', 'viral-news'),
-                'viral_news_widgets_field_type' => 'select',
-                'viral_news_widgets_field_options' => $cat,
-                'viral_news_widgets_default' => '-1'
+                'war_news_widgets_name' => 'category',
+                'war_news_widgets_title' => esc_html__('Select Category', 'war-news'),
+                'war_news_widgets_field_type' => 'select',
+                'war_news_widgets_field_options' => $cat,
+                'war_news_widgets_default' => '-1'
             ),
             'post_no' => array(
-                'viral_news_widgets_name' => 'post_no',
-                'viral_news_widgets_title' => esc_html__('No of Posts', 'viral-news'),
-                'viral_news_widgets_field_type' => 'number',
-                'viral_news_widgets_default' => 5,
+                'war_news_widgets_name' => 'post_no',
+                'war_news_widgets_title' => esc_html__('No of Posts', 'war-news'),
+                'war_news_widgets_field_type' => 'number',
+                'war_news_widgets_default' => 5,
             )
         );
 
@@ -66,7 +66,7 @@ class viral_news_timeline extends WP_Widget {
     public function widget($args, $instance) {
         extract($args);
 
-        $title = isset($instance['title']) ? $instance['title'] : esc_html__('Title', 'viral-news');
+        $title = isset($instance['title']) ? $instance['title'] : esc_html__('Title', 'war-news');
         $category = isset($instance['category']) ? $instance['category'] : '-1';
         $post_no = isset($instance['post_no']) ? $instance['post_no'] : '';
 
@@ -82,7 +82,7 @@ class viral_news_timeline extends WP_Widget {
 
         if (!empty($category)):
             ?>
-            <div class="vn-timeline">
+            <div class="wn-timeline">
                 <?php
                 $args = array(
                     'ignore_sticky_posts' => 1,
@@ -97,8 +97,8 @@ class viral_news_timeline extends WP_Widget {
 
                 while ($query->have_posts()): $query->the_post();
                     ?>
-                    <div class="vn-post-item">
-                        <?php echo viral_news_post_date(); ?>
+                    <div class="wn-post-item">
+                        <?php echo war_news_post_date(); ?>
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     </div>
                     <?php
@@ -119,7 +119,7 @@ class viral_news_timeline extends WP_Widget {
      * @param	array	$new_instance	Values just sent to be saved.
      * @param	array	$old_instance	Previously saved values from database.
      *
-     * @uses	viral_news_widgets_updated_field_value()		defined in widget-fields.php
+     * @uses	war_news_widgets_updated_field_value()		defined in widget-fields.php
      *
      * @return	array Updated safe values to be saved.
      */
@@ -134,7 +134,7 @@ class viral_news_timeline extends WP_Widget {
             extract($widget_field);
 
             // Use helper function to get updated field values
-            $instance[$viral_news_widgets_name] = viral_news_widgets_updated_field_value($widget_field, $new_instance[$viral_news_widgets_name]);
+            $instance[$war_news_widgets_name] = war_news_widgets_updated_field_value($widget_field, $new_instance[$war_news_widgets_name]);
         }
 
         return $instance;
@@ -147,7 +147,7 @@ class viral_news_timeline extends WP_Widget {
      *
      * @param	array $instance Previously saved values from database.
      *
-     * @uses	viral_news_widgets_show_widget_field()		defined in widget-fields.php
+     * @uses	war_news_widgets_show_widget_field()		defined in widget-fields.php
      */
     public function form($instance) {
         $widget_fields = $this->widget_fields();
@@ -157,8 +157,8 @@ class viral_news_timeline extends WP_Widget {
 
             // Make array elements available as variables
             extract($widget_field);
-            $viral_news_widgets_field_value = !empty($instance[$viral_news_widgets_name]) ? esc_attr($instance[$viral_news_widgets_name]) : '';
-            viral_news_widgets_show_widget_field($this, $widget_field, $viral_news_widgets_field_value);
+            $war_news_widgets_field_value = !empty($instance[$war_news_widgets_name]) ? esc_attr($instance[$war_news_widgets_name]) : '';
+            war_news_widgets_show_widget_field($this, $widget_field, $war_news_widgets_field_value);
         }
     }
 

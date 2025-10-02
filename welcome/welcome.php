@@ -1,7 +1,7 @@
 <?php
-if (!class_exists('Viral_News_Welcome')) :
+if (!class_exists('War_News_Welcome')) :
 
-    class Viral_News_Welcome {
+    class War_News_Welcome {
 
         public $tab_sections = array();
         public $theme_name = ''; // For storing Theme Name
@@ -21,10 +21,10 @@ if (!class_exists('Viral_News_Welcome')) :
 
             /** Define Tabs Sections */
             $this->tab_sections = array(
-                'getting_started' => esc_html__('Getting Started', 'viral-news'),
-                'recommended_plugins' => esc_html__('Recommended Plugins', 'viral-news'),
-                'support' => esc_html__('Support', 'viral-news'),
-                'free_vs_pro' => esc_html__('Free Vs Pro', 'viral-news')
+                'getting_started' => esc_html__('Getting Started', 'war-news'),
+                'recommended_plugins' => esc_html__('Recommended Plugins', 'war-news'),
+                'support' => esc_html__('Support', 'war-news'),
+                'free_vs_pro' => esc_html__('Free Vs Pro', 'war-news')
             );
 
             /** List of Recommended Free Plugins */
@@ -72,12 +72,12 @@ if (!class_exists('Viral_News_Welcome')) :
 
             add_action('after_switch_theme', array($this, 'erase_hide_notice'));
 
-            add_action('wp_ajax_viral_news_activate_plugin', array($this, 'activate_plugin'));
+            add_action('wp_ajax_war_news_activate_plugin', array($this, 'activate_plugin'));
         }
 
         /** Trigger Welcome Message Notification */
         public function admin_notice() {
-            $hide_notice = get_option('viral_news_hide_notice');
+            $hide_notice = get_option('war_news_hide_notice');
             if (!$hide_notice) {
                 add_action('admin_notices', array($this, 'admin_notice_content'));
             }
@@ -87,42 +87,42 @@ if (!class_exists('Viral_News_Welcome')) :
         public function admin_notice_content() {
             $screen = get_current_screen();
 
-            if ('appearance_page_viral-news-welcome' === $screen->id || (isset($screen->parent_file) && 'plugins.php' === $screen->parent_file && 'update' === $screen->id) || 'theme-install' === $screen->id) {
+            if ('appearance_page_war-news-welcome' === $screen->id || (isset($screen->parent_file) && 'plugins.php' === $screen->parent_file && 'update' === $screen->id) || 'theme-install' === $screen->id) {
                 return;
             }
 
             $slug = $filename = 'hashthemes-demo-importer';
             ?>
-            <div class="updated notice viral-news-welcome-notice">
-                <div class="viral-news-welcome-notice-wrap">
-                    <h2><?php esc_html_e('Congratulations!', 'viral-news'); ?></h2>
-                    <p><?php printf(esc_html__('%1$s is now installed and ready to use. You can start either by importing the ready made demo or get started by customizing it your self.', 'viral-news'), $this->theme_name); ?></p>
+            <div class="updated notice war-news-welcome-notice">
+                <div class="war-news-welcome-notice-wrap">
+                    <h2><?php esc_html_e('Congratulations!', 'war-news'); ?></h2>
+                    <p><?php printf(esc_html__('%1$s is now installed and ready to use. You can start either by importing the ready made demo or get started by customizing it your self.', 'war-news'), $this->theme_name); ?></p>
 
-                    <div class="viral-news-welcome-info">
-                        <div class="viral-news-welcome-thumb">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/screenshot.jpg'); ?>" alt="<?php echo esc_attr_e('Viral Demo', 'viral-news'); ?>">
+                    <div class="war-news-welcome-info">
+                        <div class="war-news-welcome-thumb">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/screenshot.jpg'); ?>" alt="<?php echo esc_attr_e('Viral Demo', 'war-news'); ?>">
                         </div>
 
                         <?php
                         if ('appearance_page_hdi-demo-importer' !== $screen->id) {
                             ?>
-                            <div class="viral-news-welcome-import">
-                                <h3><?php esc_html_e('Import Demo', 'viral-news'); ?></h3>
-                                <p><?php esc_html_e('Click below to install and active HashThemes Demo Importer Plugin.', 'viral-news'); ?></p>
+                            <div class="war-news-welcome-import">
+                                <h3><?php esc_html_e('Import Demo', 'war-news'); ?></h3>
+                                <p><?php esc_html_e('Click below to install and active HashThemes Demo Importer Plugin.', 'war-news'); ?></p>
                                 <p><?php echo $this->generate_hdi_install_button(); ?></p>
                             </div>
                             <?php
                         }
                         ?>
 
-                        <div class="viral-news-welcome-getting-started">
-                            <h3><?php esc_html_e('Get Started', 'viral-news'); ?></h3>
-                            <p><?php printf(esc_html__('Here you will find all the necessary links and information on how to use %s.', 'viral-news'), $this->theme_name); ?></p>
-                            <p><a href="<?php echo esc_url(admin_url('admin.php?page=viral-news-welcome')); ?>" class="button button-primary"><?php esc_html_e('Go to Setting Page', 'viral-news'); ?></a></p>
+                        <div class="war-news-welcome-getting-started">
+                            <h3><?php esc_html_e('Get Started', 'war-news'); ?></h3>
+                            <p><?php printf(esc_html__('Here you will find all the necessary links and information on how to use %s.', 'war-news'), $this->theme_name); ?></p>
+                            <p><a href="<?php echo esc_url(admin_url('admin.php?page=war-news-welcome')); ?>" class="button button-primary"><?php esc_html_e('Go to Setting Page', 'war-news'); ?></a></p>
                         </div>
                     </div>
 
-                    <a href="<?php echo wp_nonce_url(add_query_arg('viral_news_hide_notice', 1), 'viral_news_hide_notice_nonce', '_viral_news_notice_nonce'); ?>" class="notice-close"><?php esc_html_e('Dismiss', 'viral-news'); ?></a>
+                    <a href="<?php echo wp_nonce_url(add_query_arg('war_news_hide_notice', 1), 'war_news_hide_notice_nonce', '_war_news_notice_nonce'); ?>" class="notice-close"><?php esc_html_e('Dismiss', 'war-news'); ?></a>
                 </div>
 
             </div>
@@ -131,18 +131,18 @@ if (!class_exists('Viral_News_Welcome')) :
 
         /** Hide Admin Notice */
         public function hide_admin_notice() {
-            if (isset($_GET['viral_news_hide_notice']) && isset($_GET['_viral_news_notice_nonce']) && current_user_can('manage_options')) {
-                if (!wp_verify_nonce(wp_unslash($_GET['_viral_news_notice_nonce']), 'viral_news_hide_notice_nonce')) {
-                    wp_die(esc_html__('Action Failed. Something is Wrong.', 'viral-news'));
+            if (isset($_GET['war_news_hide_notice']) && isset($_GET['_war_news_notice_nonce']) && current_user_can('manage_options')) {
+                if (!wp_verify_nonce(wp_unslash($_GET['_war_news_notice_nonce']), 'war_news_hide_notice_nonce')) {
+                    wp_die(esc_html__('Action Failed. Something is Wrong.', 'war-news'));
                 }
 
-                update_option('viral_news_hide_notice', true);
+                update_option('war_news_hide_notice', true);
             }
         }
 
         /** Register Menu for Welcome Page */
         public function welcome_register_menu() {
-            add_menu_page(esc_html__('Welcome', 'viral-news'), sprintf(esc_html__('%s Settings', 'viral-news'), esc_html($this->theme_name)), 'manage_options', 'viral-news-welcome', array($this, 'welcome_screen'), '', 60);
+            add_menu_page(esc_html__('Welcome', 'war-news'), sprintf(esc_html__('%s Settings', 'war-news'), esc_html($this->theme_name)), 'manage_options', 'war-news-welcome', array($this, 'welcome_screen'), '', 60);
         }
 
         /** Welcome Page */
@@ -173,15 +173,15 @@ if (!class_exists('Viral_News_Welcome')) :
         public function welcome_styles_and_scripts($hook) {
             if ('theme-install.php' !== $hook) {
                 $importer_params = array(
-                    'installing_text' => esc_html__('Installing Demo Importer Plugin', 'viral-news'),
-                    'activating_text' => esc_html__('Activating Demo Importer Plugin', 'viral-news'),
-                    'importer_page' => esc_html__('Go to Demo Importer Page', 'viral-news'),
+                    'installing_text' => esc_html__('Installing Demo Importer Plugin', 'war-news'),
+                    'activating_text' => esc_html__('Activating Demo Importer Plugin', 'war-news'),
+                    'importer_page' => esc_html__('Go to Demo Importer Page', 'war-news'),
                     'importer_url' => admin_url('themes.php?page=hdi-demo-importer'),
-                    'error' => esc_html__('Error! Reload the page and try again.', 'viral-news'),
+                    'error' => esc_html__('Error! Reload the page and try again.', 'war-news'),
                 );
-                wp_enqueue_style('viral-news-welcome', get_template_directory_uri() . '/welcome/css/welcome.css', array(), VIRAL_NEWS_VERSION);
-                wp_enqueue_script('viral-news-welcome', get_template_directory_uri() . '/welcome/js/welcome.js', array('plugin-install', 'updates'), VIRAL_NEWS_VERSION, true);
-                wp_localize_script('viral-news-welcome', 'importer_params', $importer_params);
+                wp_enqueue_style('war-news-welcome', get_template_directory_uri() . '/welcome/css/welcome.css', array(), WAR_NEWS_VERSION);
+                wp_enqueue_script('war-news-welcome', get_template_directory_uri() . '/welcome/js/welcome.js', array('plugin-install', 'updates'), WAR_NEWS_VERSION, true);
+                wp_localize_script('war-news-welcome', 'importer_params', $importer_params);
             }
         }
 
@@ -237,7 +237,7 @@ if (!class_exists('Viral_News_Welcome')) :
 
             if (!empty($slug) && !empty($file)) {
                 $result = activate_plugin($slug . '/' . $file . '.php');
-                update_option('viral_news_hide_notice', true);
+                update_option('war_news_hide_notice', true);
                 if (!is_wp_error($result)) {
                     $success = true;
                 }
@@ -250,8 +250,8 @@ if (!class_exists('Viral_News_Welcome')) :
         public function admin_footer_text($text) {
             $screen = get_current_screen();
 
-            if ('toplevel_page_viral-news-welcome' == $screen->id) {
-                $text = sprintf(esc_html__('Please leave us a %s rating if you like our theme . A huge thank you from HashThemes in advance!', 'viral-news'), '<a href="https://wordpress.org/support/theme/viral-news/reviews/?filter=5#new-post" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a>');
+            if ('toplevel_page_war-news-welcome' == $screen->id) {
+                $text = sprintf(esc_html__('Please leave us a %s rating if you like our theme . A huge thank you from War News in advance!', 'war-news'), '<a href="https://wordpress.org/support/theme/war-news/reviews/?filter=5#new-post" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a>');
             }
 
             return $text;
@@ -263,15 +263,15 @@ if (!class_exists('Viral_News_Welcome')) :
             $import_url = '#';
 
             if ($this->check_plugin_installed_state($slug, $filename) && !$this->check_plugin_active_state($slug, $filename)) {
-                $import_class = 'button button-primary viral-news-activate-plugin';
-                $import_button_text = esc_html__('Activate Demo Importer Plugin', 'viral-news');
+                $import_class = 'button button-primary war-news-activate-plugin';
+                $import_button_text = esc_html__('Activate Demo Importer Plugin', 'war-news');
             } elseif ($this->check_plugin_installed_state($slug, $filename)) {
                 $import_class = 'button button-primary';
-                $import_button_text = esc_html__('Go to Demo Importer Page', 'viral-news');
+                $import_button_text = esc_html__('Go to Demo Importer Page', 'war-news');
                 $import_url = admin_url('themes.php?page=hdi-demo-importer');
             } else {
-                $import_class = 'button button-primary viral-news-install-plugin';
-                $import_button_text = esc_html__('Install Demo Importer Plugin', 'viral-news');
+                $import_class = 'button button-primary war-news-install-plugin';
+                $import_button_text = esc_html__('Install Demo Importer Plugin', 'war-news');
             }
             return '<a data-slug="' . esc_attr($slug) . '" data-filename="' . esc_attr($filename) . '" class="' . esc_attr($import_class) . '" href="' . $import_url . '">' . esc_html($import_button_text) . '</a>';
         }
@@ -286,11 +286,11 @@ if (!class_exists('Viral_News_Welcome')) :
         }
 
         public function erase_hide_notice() {
-            delete_option('viral_news_hide_notice');
+            delete_option('war_news_hide_notice');
         }
 
     }
 
-    new Viral_News_Welcome();
+    new War_News_Welcome();
 
 endif;

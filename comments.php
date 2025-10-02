@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Viral News
+ * @package War News
  */
 /*
  * If the current post is protected by a password and
@@ -20,7 +20,7 @@ if (post_password_required()) {
         <h3 class="comments-title">
             <?php
             printf(// WPCS: XSS OK.
-                    esc_html(_nx('%d Comment', '%d Comments', get_comments_number(), 'comments title', 'viral-news')), number_format_i18n(get_comments_number())
+                    esc_html(_nx('%d Comment', '%d Comments', get_comments_number(), 'comments title', 'war-news')), number_format_i18n(get_comments_number())
             );
             ?>
         </h3>
@@ -28,7 +28,7 @@ if (post_password_required()) {
         <ul class="comment-list">
             <?php
             wp_list_comments(array(
-                'callback' => 'viral_news_comment'
+                'callback' => 'war_news_comment'
             ));
             ?>
         </ul><!-- .comment-list -->
@@ -41,7 +41,7 @@ if (post_password_required()) {
     // If comments are closed and there are comments, let's leave a little note, shall we?
     if (!comments_open()) :
         ?>
-        <p class="no-comments"><?php esc_html_e('Comments are closed.', 'viral-news'); ?></p>
+        <p class="no-comments"><?php esc_html_e('Comments are closed.', 'war-news'); ?></p>
         <?php
     endif;
 

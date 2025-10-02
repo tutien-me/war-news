@@ -1,8 +1,8 @@
-=== Viral News ===
-Viral News WordPress Theme, Copyright HashThemes 2022
-Viral News is distributed under the terms of the GNU GPL (http://www.gnu.org/licenses/gpl-2.0.html)
+=== War News ===
+War News WordPress Theme, Copyright War News 2022
+War News is distributed under the terms of the GNU GPL (http://www.gnu.org/licenses/gpl-2.0.html)
 
-Contributors: hashthemes
+Contributors: warnews
 Tags: blog, entertainment, news, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
 Requires at least: 5.6
@@ -13,7 +13,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
-Viral News is a magazine WordPress theme specially focused on a news portal, magazine, newspaper, blog, publishing website. The theme has a clean and minimal design that can be suited for any kind of website. The theme has a repeatable drag and drop news/magazine modules that you can play with to create the layout of your need. There are 10 beautifully designed news/magazine modules to display the various categories of news. The theme has 5 widgets that are specially built for news/magazine websites. Viral News is translation ready, SEO optimized, highly customizable and is compatible with all the major WordPress Plugin. The theme has everything needed to build a complete news, magazine, blog website. 
+War News is a magazine WordPress theme specially focused on a news portal, magazine, newspaper, blog, publishing website. The theme has a clean and minimal design that can be suited for any kind of website. The theme has a repeatable drag and drop news/magazine modules that you can play with to create the layout of your need. There are 10 beautifully designed news/magazine modules to display the various categories of news. The theme has 5 widgets that are specially built for news/magazine websites. War News is translation ready, SEO optimized, highly customizable and is compatible with all the major WordPress Plugin. The theme has everything needed to build a complete news, magazine, blog website. 
 
 == Installation ==
 1. In your admin panel, go to Appearance > Themes and click the Add New button.

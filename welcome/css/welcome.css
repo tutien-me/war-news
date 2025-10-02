@@ -397,50 +397,50 @@ a.buy-pro-btn:hover{
 }
 
 /** Welcome Notice **/
-.viral-news-welcome-notice-wrap{
+.war-news-welcome-notice-wrap{
     position: relative;
     padding: 20px;
 }
 
-.viral-news-welcome-notice-wrap h2{
+.war-news-welcome-notice-wrap h2{
     font-size: 20px;
     margin: 0 0 5px;
 }
 
-.notice .viral-news-welcome-notice-wrap > p{
+.notice .war-news-welcome-notice-wrap > p{
     font-size: 16px;
     margin: 0 0 25px;
 }
 
-.viral-news-welcome-info{
+.war-news-welcome-info{
     display: flex;
 }
 
-.viral-news-welcome-info .viral-news-welcome-thumb{
+.war-news-welcome-info .war-news-welcome-thumb{
     width: 200px;
     margin-right: 40px;
 }
 
-.viral-news-welcome-info > .viral-news-welcome-import,
-.viral-news-welcome-info > .viral-news-welcome-getting-started{
+.war-news-welcome-info > .war-news-welcome-import,
+.war-news-welcome-info > .war-news-welcome-getting-started{
     width: 340px;
     margin-right: 40px;
 }
 
-.viral-news-welcome-thumb img{
+.war-news-welcome-thumb img{
     width: 100%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.viral-news-welcome-info h3{
+.war-news-welcome-info h3{
     margin: 0 0 15px;
 }
 
-.notice .viral-news-welcome-info p{
+.notice .war-news-welcome-info p{
     margin: 0 0 20px;
 }
 
-.viral-news-welcome-info .button{
+.war-news-welcome-info .button{
     margin: 0;
     padding: 12px 36px;
     height: auto;
@@ -448,13 +448,13 @@ a.buy-pro-btn:hover{
     white-space: normal;
 }
 
-.viral-news-welcome-info .button-primary.updating-message:before{
+.war-news-welcome-info .button-primary.updating-message:before{
     margin: 0px 5px 0 0;
     height: auto;
     font-size: 18px;
 }
 
-.viral-news-welcome-notice-wrap .notice-close{
+.war-news-welcome-notice-wrap .notice-close{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -464,7 +464,7 @@ a.buy-pro-btn:hover{
     text-decoration: none;
 }
 
-.viral-news-welcome-notice-wrap .notice-close:before{
+.war-news-welcome-notice-wrap .notice-close:before{
     position: absolute;
     top: 8px;
     left: 0;
@@ -479,8 +479,8 @@ a.buy-pro-btn:hover{
     width: 20px;
 }
 
-.viral-news-welcome-notice-wrap .notice-close:hover,
-.viral-news-welcome-notice-wrap .notice-close:hover:before{
+.war-news-welcome-notice-wrap .notice-close:hover,
+.war-news-welcome-notice-wrap .notice-close:hover:before{
     color: #FF0000;
 }
 
@@ -548,7 +548,7 @@ body.toplevel_page_viral-news-welcome #wpfooter a{
         padding: 40px;
     }
 
-    .viral-news-welcome-info .viral-news-welcome-thumb{
+    .war-news-welcome-info .war-news-welcome-thumb{
         display: none;
     }
 
@@ -604,17 +604,17 @@ body.toplevel_page_viral-news-welcome #wpfooter a{
         text-align: left !important;
     }
 
-    .viral-news-welcome-info{
+    .war-news-welcome-info{
         display: block;
     }
 
-    .viral-news-welcome-info > .viral-news-welcome-import, 
-    .viral-news-welcome-info > .viral-news-welcome-getting-started{
+    .war-news-welcome-info > .war-news-welcome-import, 
+    .war-news-welcome-info > .war-news-welcome-getting-started{
         width: auto;
         margin: 0 0 30px;
     }
 
-    .viral-news-welcome-info > .viral-news-welcome-getting-started{
+    .war-news-welcome-info > .war-news-welcome-getting-started{
         margin-bottom: 0;
     }
 }

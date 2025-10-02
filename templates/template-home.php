@@ -2,16 +2,16 @@
 /**
  * Template Name: Home Page
  *
- * @package Viral News
+ * @package War News
  */
 get_header();
 ?>
-<div class="vn-container">
-    <div id="vn-top-section">
+<div class="wn-container">
+    <div id="wn-top-section">
         <?php get_template_part('home-parts/top-section'); ?>
     </div>
 
-    <div id="vn-middle-section" class="vn-clearfix">
+    <div id="wn-middle-section" class="wn-clearfix">
         <div id="primary">
             <?php get_template_part('home-parts/middle-left-section'); ?>
         </div>
@@ -21,11 +21,11 @@ get_header();
         </div>
     </div>
     
-    <div id="vn-carousel-section">
+    <div id="wn-carousel-section">
         <?php get_template_part('home-parts/carousel-section'); ?>
     </div>
 
-    <div id="vn-bottom-section">
+    <div id="wn-bottom-section">
         <?php get_template_part('home-parts/bottom-section'); ?>
     </div>
 </div>

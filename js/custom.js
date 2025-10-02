@@ -1,12 +1,12 @@
 jQuery(function ($) {
 
-    $('.vn-toggle-menu').on('click', function () {
-        $('.vn-main-navigation .vn-menu').slideToggle();
-        viralMenuFocus($('#vn-site-navigation'));
+    $('.wn-toggle-menu').on('click', function () {
+        $('.wn-main-navigation .wn-menu').slideToggle();
+        viralMenuFocus($('#wn-site-navigation'));
         return false;
     });
 
-    $('.vn-menu > ul').superfish({
+    $('.wn-menu > ul').superfish({
         delay: 500,
         animation: {opacity: 'show', height: 'show'},
         speed: 'fast'
@@ -19,18 +19,18 @@ jQuery(function ($) {
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 300) {
-            $('#vn-back-top').removeClass('vn-hide');
+            $('#wn-back-top').removeClass('wn-hide');
         } else {
-            $('#vn-back-top').addClass('vn-hide');
+            $('#wn-back-top').addClass('wn-hide');
         }
     });
 
-    $('#vn-back-top').click(function () {
+    $('#wn-back-top').click(function () {
         $('html,body').animate({scrollTop: 0}, 800);
     });
 
     /*---------Popup Search---------*/
-    $('.vn-header-search a').on('click', function () {
+    $('.wn-header-search a').on('click', function () {
         $('.ht-search-wrapper').addClass('ht-search-triggered');
         setTimeout(function () {
             $('.ht-search-wrapper .search-field').focus();
@@ -41,13 +41,13 @@ jQuery(function ($) {
 
     $('.ht-search-close').on('click', function () {
         $('.ht-search-wrapper').removeClass('ht-search-triggered');
-        $('.vn-header-search a').focus();
+        $('.wn-header-search a').focus();
         return false;
     });
 
-    if ($('.vn-carousel-block').length > 0) {
-        $('.vn-carousel-block').each(function () {
-            $ele = $(this).find('.vn-carousel-block-wrap');
+    if ($('.wn-carousel-block').length > 0) {
+        $('.wn-carousel-block').each(function () {
+            $ele = $(this).find('.wn-carousel-block-wrap');
             $slide = $(this).attr('data-count');
             $($ele).owlCarousel({
                 loop: true,
@@ -76,7 +76,7 @@ jQuery(function ($) {
 
         elem.on('keyup', function (e) {
             if (e.keyCode === 27) {
-                elem.find('.vn-menu').hide();
+                elem.find('.wn-menu').hide();
             }
         });
     };
@@ -87,7 +87,7 @@ jQuery(function ($) {
         elem.on('keydown', function (e) {
             if (e.keyCode == 27 && elem.hasClass('ht-search-triggered')) {
                 elem.removeClass('ht-search-triggered');
-                $('.vn-header-search a').focus();
+                $('.wn-header-search a').focus();
             }
         });
     };

@@ -1,14 +1,14 @@
 <?php
 
 /**
- * @package Viral News
+ * @package War News
  */
-function viral_news_dymanic_styles() {
-    $color = get_theme_mod('viral_news_template_color', '#0078af');
-    $content_color = get_theme_mod('viral_news_content_color', '#404040');
-    $header_typography = get_theme_mod('viral_news_header_typography', 'Playfair Display');
-    $body_typography = get_theme_mod('viral_news_body_typography', 'Libre Baskerville');
-    $header_image = get_theme_mod('viral_news_header_image');
+function war_news_dymanic_styles() {
+    $color = get_theme_mod('war_news_template_color', '#0078af');
+    $content_color = get_theme_mod('war_news_content_color', '#404040');
+    $header_typography = get_theme_mod('war_news_header_typography', 'Playfair Display');
+    $body_typography = get_theme_mod('war_news_body_typography', 'Libre Baskerville');
+    $header_image = get_theme_mod('war_news_header_image');
     $header_image = esc_url($header_image);
     $color = sanitize_hex_color($color); //Sanitized here so that variable can be used inside quote
     $header_typography = wp_filter_post_kses($header_typography); //Sanitized here so that variable can be used inside quote
@@ -41,8 +41,8 @@ textarea,
     border-color: {$content_color}
 }
 
-.vn-site-title,
-.vn-main-navigation a,
+.wn-site-title,
+.wn-main-navigation a,
 h1,
 h2,
 h3,
@@ -57,21 +57,21 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'],
 .entry-post-info .entry-date,
-.entry-footer .vn-read-more,
-.vn-timeline .vn-post-item:hover:after,
+.entry-footer .wn-read-more,
+.wn-timeline .wn-post-item:hover:after,
 .comment-navigation .nav-previous a,
 .comment-navigation .nav-next a,
-#vn-site-navigation.vn-theme-color,
-.vn-top-header.vn-theme-color,
-.vn-top-block .post-categories li a:hover,
+#wn-site-navigation.wn-theme-color,
+.wn-top-header.wn-theme-color,
+.wn-top-block .post-categories li a:hover,
 body .he-post-thumb .post-categories li a:hover,
 body .he-post-content .post-categories li a:hover,
-.vn-block-title span:before,
+.wn-block-title span:before,
 body .he-title-style2.he-block-title span:before,
 .widget-area .widget-title span:before,
-#vn-back-top,
-.vn-carousel-block .owl-carousel .owl-nav button.owl-prev, 
-.vn-carousel-block .owl-carousel .owl-nav button.owl-next,
+#wn-back-top,
+.wn-carousel-block .owl-carousel .owl-nav button.owl-prev, 
+.wn-carousel-block .owl-carousel .owl-nav button.owl-next,
 body .he-carousel-block .owl-carousel .owl-nav button.owl-prev, 
 body .he-carousel-block .owl-carousel .owl-nav button.owl-next,
 body .he-ticker-title,
@@ -82,7 +82,7 @@ body .he-ticker .owl-carousel .owl-nav button[class^='owl-']{
 a,
 .comment-list a:hover,
 .post-navigation a:hover,
-.vn-post-item h3 a:hover,
+.wn-post-item h3 a:hover,
 .widget-area a:hover,
 body .he-ticker .owl-item a:hover{
 	color:{$color};
@@ -103,8 +103,8 @@ body .he-ticker-title:after{
 ";
 
     if ($header_image) {
-        $custom_css .= ".vn-header{padding: 70px 0;background-image: url('{$header_image}')}";
+        $custom_css .= ".wn-header{padding: 70px 0;background-image: url('{$header_image}')}";
     }
 
-    return wp_strip_all_tags(viral_news_css_strip_whitespace($custom_css));
+    return wp_strip_all_tags(war_news_css_strip_whitespace($custom_css));
 }

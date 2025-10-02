@@ -90,7 +90,7 @@ add_action('after_setup_theme', 'war_news_content_width', 0);
 function war_news_widgets_init() {
     register_sidebar(array(
         'name' => esc_html__('Right Sidebar', 'war-news'),
-        'id' => 'viral-news-sidebar',
+        'id' => 'war-news-sidebar',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
@@ -100,7 +100,7 @@ function war_news_widgets_init() {
 
     register_sidebar(array(
         'name' => esc_html__('Left Sidebar', 'war-news'),
-        'id' => 'viral-news-left-sidebar',
+        'id' => 'war-news-left-sidebar',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
@@ -110,7 +110,7 @@ function war_news_widgets_init() {
 
     register_sidebar(array(
         'name' => esc_html__('Middle News Module Sidebar', 'war-news'),
-        'id' => 'viral-news-frontpage-sidebar',
+        'id' => 'war-news-frontpage-sidebar',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s"><span>',
         'after_widget' => '</aside>',
@@ -232,22 +232,22 @@ if (!function_exists('wp_body_open')) {
  * Enqueue scripts and styles.
  */
 function war_news_scripts() {
-    wp_enqueue_style('viral-news-fonts', war_news_fonts_url(), array(), NULL);
+    wp_enqueue_style('war-news-fonts', war_news_fonts_url(), array(), NULL);
     wp_enqueue_style('materialdesignicons', get_template_directory_uri() . '/css/materialdesignicons.css', array(), WAR_NEWS_VERSION);
 
     if (war_news_is_amp()) {
-        wp_enqueue_style('viral-news-style', get_template_directory_uri() . '/style-amp.css', '', WAR_NEWS_VERSION);
+        wp_enqueue_style('war-news-style', get_template_directory_uri() . '/style-amp.css', '', WAR_NEWS_VERSION);
     } else {
-        wp_enqueue_style('viral-news-style', get_stylesheet_uri(), array(), WAR_NEWS_VERSION);
+        wp_enqueue_style('war-news-style', get_stylesheet_uri(), array(), WAR_NEWS_VERSION);
     }
-    wp_add_inline_style('viral-news-style', war_news_dymanic_styles());
+    wp_add_inline_style('war-news-style', war_news_dymanic_styles());
 
     if (!war_news_is_amp()) {
         wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.css', array(), WAR_NEWS_VERSION);
         wp_enqueue_script('owl-carousel', get_template_directory_uri() . '/js/owl.carousel.js', array('jquery'), WAR_NEWS_VERSION, true);
         wp_enqueue_script('theia-sticky-sidebar', get_template_directory_uri() . '/js/theia-sticky-sidebar.js', array('jquery'), WAR_NEWS_VERSION, true);
         wp_enqueue_script('jquery-superfish', get_template_directory_uri() . '/js/jquery.superfish.js', array('jquery'), WAR_NEWS_VERSION, true);
-        wp_enqueue_script('viral-news-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), WAR_NEWS_VERSION, true);
+        wp_enqueue_script('war-news-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), WAR_NEWS_VERSION, true);
 
         if (is_singular() && comments_open() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');
@@ -262,8 +262,8 @@ add_action('wp_enqueue_scripts', 'war_news_scripts');
  */
 function war_news_admin_scripts() {
     wp_enqueue_media();
-    wp_enqueue_script('viral-news-admin-scripts', get_template_directory_uri() . '/inc/js/admin-scripts.js', array('jquery'), WAR_NEWS_VERSION, true);
-    wp_enqueue_style('viral-news-admin-style', get_template_directory_uri() . '/inc/css/admin-style.css', array(), WAR_NEWS_VERSION);
+    wp_enqueue_script('war-news-admin-scripts', get_template_directory_uri() . '/inc/js/admin-scripts.js', array('jquery'), WAR_NEWS_VERSION, true);
+    wp_enqueue_style('war-news-admin-style', get_template_directory_uri() . '/inc/css/admin-style.css', array(), WAR_NEWS_VERSION);
 }
 
 add_action('admin_enqueue_scripts', 'war_news_admin_scripts');

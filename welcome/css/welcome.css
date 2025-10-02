@@ -485,7 +485,7 @@ a.buy-pro-btn:hover{
 }
 
 /** Footer Review **/
-body.toplevel_page_viral-news-welcome #wpfooter{
+body.toplevel_page_war-news-welcome #wpfooter{
     position: fixed;
     background: #23282e;
     color: #FFF;
@@ -494,7 +494,7 @@ body.toplevel_page_viral-news-welcome #wpfooter{
     margin-right: 40px;
 }
 
-body.toplevel_page_viral-news-welcome #wpfooter a{
+body.toplevel_page_war-news-welcome #wpfooter a{
     color: #FFF;
 }
 

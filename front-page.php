@@ -21,7 +21,7 @@ if ($war_news_enable_frontpage) {
             </div>
 
             <div id="secondary" class="widget-area">
-                <?php dynamic_sidebar('viral-news-frontpage-sidebar') ?>
+                <?php dynamic_sidebar('war-news-frontpage-sidebar') ?>
             </div>
         </div>
 

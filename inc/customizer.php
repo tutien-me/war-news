@@ -937,7 +937,7 @@ if (class_exists('WP_Customize_Control')) {
                                         case 'range':
                                             $options = $field['options'];
                                             $new_value = $new_value ? $new_value : $options['val'];
-                                            echo '<div class="viral-news-range-slider" >';
+                                            echo '<div class="war-news-range-slider" >';
                                             echo '<div class="range-input" data-defaultvalue="' . esc_attr($options['val']) . '" data-value="' . esc_attr($new_value) . '" data-min="' . esc_attr($options['min']) . '" data-max="' . esc_attr($options['max']) . '" data-step="' . esc_attr($options['step']) . '"></div>';
                                             echo '<input  class="range-input-selector" type="text" value="' . esc_attr($new_value) . '"  data-name="' . esc_attr($key) . '"/>';
                                             echo '<span class="unit">' . esc_html($options['unit']) . '</span>';
@@ -946,7 +946,7 @@ if (class_exists('WP_Customize_Control')) {
 
                                         case 'multicategory':
                                             $new_value_array = !is_array($new_value) ? explode(',', $new_value) : $new_value;
-                                            echo '<ul class="viral-news-multi-category-list">';
+                                            echo '<ul class="war-news-multi-category-list">';
                                             foreach ($this->cats as $cat) {
                                                 $checked = in_array($cat->term_id, $new_value_array) ? 'checked="checked"' : '';
                                                 echo '<li>';
@@ -988,7 +988,7 @@ if (class_exists('WP_Customize_Control')) {
         public function render_content() {
             if (!empty($this->label)) :
                 ?>
-                <h3 class="viral-news-accordion-section-title"><?php echo esc_html($this->label); ?></h3>
+                <h3 class="war-news-accordion-section-title"><?php echo esc_html($this->label); ?></h3>
                 <?php
             endif;
         }
@@ -1074,7 +1074,7 @@ if (class_exists('WP_Customize_Control')) {
          *
          * @var string
          */
-        public $type = 'viral-news-toggle';
+        public $type = 'war-news-toggle';
 
         /**
          * Control method
@@ -1083,7 +1083,7 @@ if (class_exists('WP_Customize_Control')) {
          */
         public function render_content() {
             ?>
-            <div class="viral-news-checkbox-toggle">
+            <div class="war-news-checkbox-toggle">
                 <div class="toggle-switch">
                     <input type="checkbox" id="<?php echo esc_attr($this->id); ?>" name="<?php echo esc_attr($this->id); ?>" class="toggle-checkbox" value="<?php echo esc_attr($this->value()); ?>" <?php $this->link(); ?> <?php checked($this->value()); ?>>
                     <label class="toggle-label" for="<?php echo esc_attr($this->id); ?>"><span></span></label>
@@ -1103,7 +1103,7 @@ if (class_exists('WP_Customize_Control')) {
     // Upgrade Text
     class War_News_Upgrade_Text extends WP_Customize_Control {
 
-        public $type = 'viral-news-upgrade-text';
+        public $type = 'war-news-upgrade-text';
 
         public function render_content() {
             ?>

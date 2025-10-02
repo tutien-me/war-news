@@ -715,7 +715,7 @@ msgstr ""
 
 #: welcome/welcome.php:115 welcome/sections/getting_started.php:6
 #: welcome/sections/footer.php:10
-msgid "Viral Demo"
+msgid "War Demo"
 msgstr ""
 
 #: welcome/welcome.php:122
@@ -1078,7 +1078,7 @@ msgstr ""
 #: welcome/sections/footer.php:101 welcome/sections/footer.php:114
 #: welcome/sections/footer.php:127 welcome/sections/footer.php:140
 #: welcome/sections/footer.php:153
-msgid "Viral Plus Demo"
+msgid "War Plus Demo"
 msgstr ""
 
 #: welcome/sections/footer.php:168

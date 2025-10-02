@@ -476,19 +476,19 @@
     content: "\f319";
 }
 
-#accordion-section-viral_news_typography_section .accordion-section-title:before{
+#accordion-section-war_news_typography_section .accordion-section-title:before{
     content: "\f464";
 }
 
-#accordion-panel-viral_news_general_settings_panel .accordion-section-title:before{
+#accordion-panel-war_news_general_settings_panel .accordion-section-title:before{
     content: "\f111";
 }
 
-#accordion-panel-viral_news_header_setting_panel .accordion-section-title:before{
+#accordion-panel-war_news_header_setting_panel .accordion-section-title:before{
     content: "\f212";
 }
 
-#accordion-panel-viral_news_front_page_panel .accordion-section-title:before{
+#accordion-panel-war_news_front_page_panel .accordion-section-title:before{
     content: "\f102";
 }
 
@@ -504,23 +504,23 @@
     content: "\f499";
 }
 
-#accordion-section-viral-news-doc-section .accordion-section-title:before{
+#accordion-section-war-news-doc-section .accordion-section-title:before{
     content: "\f105";
 }
 
-#accordion-section-viral-news-demo-import-section .accordion-section-title:before{
+#accordion-section-war-news-demo-import-section .accordion-section-title:before{
     content: "\f316";
 }
 
-#accordion-section-viral-news-pro-section .accordion-section-title:before{
+#accordion-section-war-news-pro-section .accordion-section-title:before{
     display: none;
 }
 
-#accordion-section-viral-news-pro-section{
+#accordion-section-war-news-pro-section{
     text-align: center;
 }
 
-#accordion-section-viral-news-pro-section .accordion-section-title .button {
+#accordion-section-war-news-pro-section .accordion-section-title .button {
     height: auto;
     line-height: 1.6;
     text-transform: uppercase;
@@ -535,57 +535,57 @@
     font-size: 15px;
 }
 
-#accordion-section-viral-news-doc-section .accordion-section-title .button,
-#accordion-section-viral-news-demo-import-section .accordion-section-title .button{
+#accordion-section-war-news-doc-section .accordion-section-title .button,
+#accordion-section-war-news-demo-import-section .accordion-section-title .button{
     float: right;
     margin-top: -2px;
 }
 
-.customize-control-viral-news-upgrade-text{
+.customize-control-war-news-upgrade-text{
     background: #FFFFFF;
     box-sizing: border-box;
     padding: 10px;
 }
 
-.customize-control-viral-news-upgrade-text label{
+.customize-control-war-news-upgrade-text label{
     padding: 0 0 0 26px;
     display: block;
 }
 
-.customize-control-viral-news-upgrade-text .dashicons{
+.customize-control-war-news-upgrade-text .dashicons{
     float: left;
     margin-left: -26px;
 }
 
-.customize-control-viral-news-upgrade-text ul{
+.customize-control-war-news-upgrade-text ul{
     margin: 8px 0 0 16px;
     font-style: italic;
 }
 
-.customize-control-viral-news-upgrade-text ul li{
+.customize-control-war-news-upgrade-text ul li{
     margin-bottom: 3px;
     padding-left: 8px;
     line-height: 1.3;
 }
 
-.customize-control-viral-news-upgrade-text ul li:before{
+.customize-control-war-news-upgrade-text ul li:before{
     content: '- ';
     margin-left: -8px;
 }
 
-.control-section-viral-news-upgrade-section{
+.control-section-war-news-upgrade-section{
     background: #FFF;
     padding: 20px;
     margin: 15px;
 }
 
-.control-section-viral-news-upgrade-section .button{
+.control-section-war-news-upgrade-section .button{
     display: block;
     text-align: center;
     margin-top: 10px;
 }
 
-.control-section-viral-news-upgrade-section label{
+.control-section-war-news-upgrade-section label{
     display: block;
     font-weight: bold;
     margin-bottom: 8px;

@@ -25,7 +25,7 @@ function war_news_body_classes($classes) {
             $sidebar_layout = 'right-sidebar';
         }
 
-        $classes[] = 'viral-news-' . $sidebar_layout;
+        $classes[] = 'war-news-' . $sidebar_layout;
     }
 
     $website_layout = get_theme_mod('war_news_website_layout', 'fullwidth');

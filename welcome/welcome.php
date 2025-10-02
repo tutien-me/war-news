@@ -100,7 +100,7 @@ if (!class_exists('War_News_Welcome')) :
 
                     <div class="war-news-welcome-info">
                         <div class="war-news-welcome-thumb">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/screenshot.jpg'); ?>" alt="<?php echo esc_attr_e('Viral Demo', 'war-news'); ?>">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/screenshot.jpg'); ?>" alt="<?php echo esc_attr_e('War Demo', 'war-news'); ?>">
                         </div>
 
                         <?php

@@ -2,7 +2,7 @@ jQuery(function ($) {
 
     $('.wn-toggle-menu').on('click', function () {
         $('.wn-main-navigation .wn-menu').slideToggle();
-        viralMenuFocus($('#wn-site-navigation'));
+        warMenuFocus($('#wn-site-navigation'));
         return false;
     });
 
@@ -35,7 +35,7 @@ jQuery(function ($) {
         setTimeout(function () {
             $('.ht-search-wrapper .search-field').focus();
         }, 300);
-        viralSearchModalFocus($('.ht-search-wrapper'));
+        warSearchModalFocus($('.ht-search-wrapper'));
         return false;
     });
 
@@ -71,8 +71,8 @@ jQuery(function ($) {
         });
     }
 
-    var viralMenuFocus = function (elem) {
-        viralKeyboardLoop(elem);
+    var warMenuFocus = function (elem) {
+        warKeyboardLoop(elem);
 
         elem.on('keyup', function (e) {
             if (e.keyCode === 27) {
@@ -81,8 +81,8 @@ jQuery(function ($) {
         });
     };
 
-    var viralSearchModalFocus = function (elem) {
-        viralKeyboardLoop(elem);
+    var warSearchModalFocus = function (elem) {
+        warKeyboardLoop(elem);
 
         elem.on('keydown', function (e) {
             if (e.keyCode == 27 && elem.hasClass('ht-search-triggered')) {
@@ -92,7 +92,7 @@ jQuery(function ($) {
         });
     };
 
-    var viralKeyboardLoop = function (elem) {
+    var warKeyboardLoop = function (elem) {
         var tabbable = elem.find('select, input, textarea, button, a').filter(':visible');
 
         var firstTabbable = tabbable.first();

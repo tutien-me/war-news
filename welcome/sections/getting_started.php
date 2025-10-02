@@ -3,7 +3,7 @@
         <h3><?php echo esc_html__('Manual Setup', 'war-news'); ?></h3>
         <!--
         <div class="welcome-theme-thumb">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/set-front-page.gif'); ?>" alt="<?php echo esc_attr__('Viral Demo', 'war-news'); ?>">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/set-front-page.gif'); ?>" alt="<?php echo esc_attr__('War Demo', 'war-news'); ?>">
         </div> -->
         <p><?php echo esc_html__('You can setup the home page sections either from Customizer Panel or from Elementor Pagebuilder', 'war-news'); ?></p>
         <p><strong><?php echo esc_html__('FROM CUSTOMIZER', 'war-news'); ?></strong></p>
